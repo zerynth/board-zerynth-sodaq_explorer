@@ -1,1 +1,0 @@
-# board-zerynth-sodaq_explorer

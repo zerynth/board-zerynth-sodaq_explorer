@@ -1,0 +1,16 @@
+---
+description: Add support for SODAQ ExpLoRer
+fullname: board.zerynth.sodaq_explorer
+info:
+    board: SODAQ ExpLoRer Board
+    chip_manufacturer: Microchip
+    device: samd21
+    family_type: ARM Cortex M0+
+keywords:
+- samd21
+- board
+- sodaq
+- explorer
+- microchip
+title: SODAQ ExpLoRer Support Package
+...
