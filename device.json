@@ -1,21 +1,24 @@
 {
-    "name":"SODAQ ExpLoRer",
-    "target":"sodaq_explorer",
-    "cc":"armgcc",
-    "classes":["sodaq_explorer.SodaqExplorer", "sodaq_explorer_virtualizable.SodaqExplorerVirtualizable"],
-    "ram":32,
-    "flash":256,
-    "family_type":"armcmx",
-    "family_name":"atmelsamd21",
-    "chip_model":"SAMD21",
+    "name": "SODAQ ExpLoRer",
+    "target": "sodaq_explorer",
+    "cc": "armgcc",
+    "classes": [
+        "sodaq_explorer.SodaqExplorer",
+        "sodaq_explorer_virtualizable.SodaqExplorerVirtualizable"
+    ],
+    "ram": 32,
+    "flash": 256,
+    "family_type": "armcmx",
+    "family_name": "atmelsamd21",
+    "chip_model": "SAMD21",
     "manual_reset": 1,
-    "preferred_baud":115200,
-    "board_producer":"Atmel",
-    "chip_manifacturer":"Atmel",
-    "architecture":"cortex-m0plus",
+    "preferred_baud": 115200,
+    "board_producer": "Atmel",
+    "chip_manifacturer": "Atmel",
+    "architecture": "cortex-m0plus",
     "gccopts": {
         "arch": [
-            "cortex-m0plus",
+            "-mcpu=cortex-m0plus",
             "-mthumb"
         ],
         "cflags": [
@@ -39,28 +42,28 @@
             "VM_DEFAULT_THREAD_SIZE=1024"
         ]
     },
-    "relocator":"cortex-m",
-    "type":"board",
-    "virtualizable":"SodaqExplorerVirtualizable",
-    "jtag_target":"at91samdXX.cfg",
+    "relocator": "cortex-m",
+    "type": "board",
+    "virtualizable": "SodaqExplorerVirtualizable",
+    "jtag_target": "at91samdXX.cfg",
     "jtag_capable": 2,
-    "jtag_class":"SodaqExplorer",
+    "jtag_class": "SodaqExplorer",
     "jtag_chipid_command": "reset halt; mdw 0x0080A00C; mdw 0x0080A040; mdw 0x0080A044; mdw 0x0080A048",
-    "jtag_chipid_len":4,
-    "jtag_timeout":30,
-    "jtag_chipid_prefix":"0x0080",
-    "bytecode_offset":"0x18900",
-    "vmstore_offset":"0x19200",
+    "jtag_chipid_len": 4,
+    "jtag_timeout": 30,
+    "jtag_chipid_prefix": "0x0080",
+    "bytecode_offset": "0x18900",
+    "vmstore_offset": "0x19200",
     "uplink_reset": true,
     "reset_time": 2000,
-    "vm_chunk":64,
-    "has_alter_ego":"SodaqExplorer",
-    "connection":{
-        "baudrate":115200,
-        "parity":"n",
-        "bytesize":8,
-        "stopbits":1,
-        "dsrdtr":false,
-        "rtscts":false
+    "vm_chunk": 64,
+    "has_alter_ego": "SodaqExplorer",
+    "connection": {
+        "baudrate": 115200,
+        "parity": "n",
+        "bytesize": 8,
+        "stopbits": 1,
+        "dsrdtr": false,
+        "rtscts": false
     }
 }
